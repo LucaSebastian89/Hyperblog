@@ -44,3 +44,32 @@ $ ssh-add ~/.ssh/id_rsa
 ~ = Home
 .ssh = carpeta ssh
 id_rsa = llave privada la que nunca debemos de mostrar.
+
+
+Clase 20 ---------------------------------------------------------------------------------------------------------------------------------------
+
+*una ves creada la llave publica y privada y añadida a nuestro servidor de SSH la agregamos a GitHub
+
+vamos a la pestaña Settings y agregamos la llave
+
+luevo vamos al proyecto en git hub y en la pestaña clone or download, copiamos el link q nos aparece en "Clone with SSH"
+
+vamos al repositorio local y cambiamos el url de nuestro repositorio remoto
+
+ git remote -v //lista los repositorios remotos
+
+ git remote set-url origin (url)  //cambiamos la url del repositorio remoto origin
+
+Sabemos que funciona haciedo cambios. no va a pedir la contraseña https
+
+traemos el repositorio con git pull origin master
+
+hacemos los cambios y guardamos con git commit -am " "
+
+hacemos otro git pull para ver q las cosas esten bien 
+
+y mandamos nuestro con git push origin master
+
+
+
+Clase 21-----------------------------------------------------------------------------------------------------------------------------
