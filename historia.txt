@@ -131,3 +131,61 @@ git merge footer
 
 y enviemos nuevamente los cambios.
 
+Clase 25 --------------------------------------------------------------------------------------------------------------------------------
+
+En un entorno profesional normalmente se bloquea la rama master, 
+y para enviar código a dicha rama pasa por un code review y luego de su aprobación se unen códigos con los llamados merge request.
+
+Para realizar pruebas enviamos el código a servidores que normalmente los llamamos 
+staging develop (servidores de pruebas) luego de que se realizan las pruebas pertinentes 
+tanto de código como de la aplicación estos pasan a el servidor de producción con el ya antes mencionado merge request.
+
+Clase 26 ----------------------------------------------------------------------------------------------------------------------------------
+
+Explicacion de lo q es un pull request 
+
+es una herramienta de gitHub para trabajar en un Staging del lado del servidor.. y revisar cambios antes de hacer un merge
+
+se crea un brunch donde se realizan cambios de la rama master, pero antes de hacer merge con master se hace un pull request para que
+se revisen q los cambios son correctos. pueden revisar colaboradores (reviwers) o el DevOP. una ves aprovados los cambios se puede realizar el merge
+es una herramienta de github para controlar que no se hagan merge sin revisarlos antes y para respetar quien hace los merge. es buena practica utilizarlos
+tambien es buena practica q solo el DevOp haga los merge a master.
+
+una ves realizado el merge, es recomendable eliminar la rama q se creo para no acumular ramas innecesarias.
+
+
+Clase 27 -----------------------------------------------------------------------------------------------------------------------------------
+
+
+Para hacer una contribución a un proyecto de Github hay que seguir los siguientes pasos:
+
+Darle al botón de Fork en Github
+Hacer los cambios y darle push a ellos en mi repositorio
+Hacer un pull request con mis cambios en alguna de las ramas del proyecto original y esperar
+Una vez aprueben o rechacen mis cambios seré notificado en la cuenta de github
+Pero también pasa algo muy interesante y es que cuando yo he hecho un fork, el proyecto original sigue avanzando y el mio se va quedando atras, así que para traer los cambios del proyecto original eso se hace de la siguiente manera:
+
+Crear una nueva fuente para hacer pull desde el repositorio forkeado. Por ejemplo:
+git remote add upstream git@github.com:freddier/hyperblog.git
+Nota: la palabra upstream es opcional pero es lo que normalmente se usa en la industria.
+Verificamos que hay una nueva fuente de datos con
+git remote -v
+Hacer pull de upstream/master
+git pull upstream master
+Hacer un commit para fusionar los cambios que hemos traído
+git commit -am “Fusion”
+Hacer un push para mandar los cambios a nuestro repositorio original
+git push origin master
+
+
+Clase 28 ------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+En esta clase veremos como hacer deploy de nuestra aplicación utilizando un servidor.
+
+No te preocupes si no has comprado un servidor no es necesario, puedes instalar un servidor local en tu computadora para realizar pruebas y testear tu aplicación.
+
+En Platzi tenemos una carrera de servidores que te va a ayudar a automatizar mucho más estas tareas en platzi.com/servidores
+
+
+
