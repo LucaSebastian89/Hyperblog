@@ -119,4 +119,15 @@ recordar git checkout RAMA  para moverse entre ramas
 
 luego modificamos la rama footer
 
+si los cambios en footer los hizo un colaborador primero los traemos con pull
+
 y luego desde la rama master hacemos merge con la rama header y luego con la rama footer
+
+git merge header 
+
+enviamos los cambios y luego,
+
+git merge footer
+
+y enviemos nuevamente los cambios.
+
