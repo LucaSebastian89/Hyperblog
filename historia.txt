@@ -104,4 +104,19 @@ Por defecto, cualquier persona puede clonar o descargar tu proyecto desde GitHub
 
 Existen varias formas de solucionar esto para poder aceptar contribuciones. Una de ellas es añadir a cada persona de nuestro equipo como colaborador de nuestro repositorio.
 
-Solo debemos entrar a la configuración de colaboradores de nuestro proyecto (Repositorio > Settings > Collaborators) y añadir el email o username de los nuevos colaboradores.
+Solo debemos entrar a la configuración de colaboradores de nuestro proyecto (Repositorio > Settings > Collaborators) y añadir el email o username de los nuevos colaboradores. 
+
+
+Clase 24------------------------------------------------------------------------------------------------------------------------------------------------
+
+trabajamos en varias ramas distintas y las subimos al repositorio remoto
+
+git pull origin header   ----  para traer la rama header
+
+git push origin header    ---- para mandar los cambios 
+
+recordar git checkout RAMA  para moverse entre ramas
+
+luego modificamos la rama footer
+
+y luego desde la rama master hacemos merge con la rama header y luego con la rama footer
